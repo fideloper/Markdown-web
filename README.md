@@ -35,6 +35,7 @@ This is an API to parse Markdown and return valid HTML.
 	//set the url, number of POST vars, POST data
 	curl_setopt($ch,CURLOPT_URL, 'http://apis.fideloper.com/markdown.html');
 	curl_setopt($ch,CURLOPT_POST,count($fields));
+	curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE); //Return result intead of output to browser
 	curl_setopt($ch,CURLOPT_POSTFIELDS,'markdown='.$markdown);
 
 	//execute post
@@ -55,6 +56,7 @@ This is an API to parse Markdown and return valid HTML.
 
 	//set the url, number of POST vars, POST data
 	curl_setopt($ch,CURLOPT_URL, 'http://apis.fideloper.com/markdown.json');
+	curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE); //Return restult instead of output to browser
 	curl_setopt($ch,CURLOPT_POST,count($fields));
 	curl_setopt($ch,CURLOPT_POSTFIELDS,'markdown='.$markdown);
 
