@@ -29,7 +29,8 @@ $content = Markdown(file_get_contents('README.md'));
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-XXXXXXX']);
+	  _gaq.push(['_setAccount', 'UA-20914866-1']);
+	  _gaq.push(['_setDomainName', 'fideloper.com']);
 	  _gaq.push(['_trackPageview']);
 
 	  (function() {
